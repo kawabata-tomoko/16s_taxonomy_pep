@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-07T15:32:48.062Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.63" etag="juDY-6lW7m4On-j3ZsM4" version="21.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-07T15:38:26.013Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.63" etag="4Jez7eBTZHRbngRKD7v6" version="21.0.2" type="github">
   <diagram name="第 1 页" id="VTZKAf1ltyL4esYXZAsg">
     <mxGraphModel dx="913" dy="1667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -19,11 +19,32 @@
             <mxPoint x="127.5" y="115" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wX_MCLOSpyru5hPgQ0eP-62" value="初步注释流程" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="270" y="360" width="550" height="610" as="geometry" />
+        <mxCell id="wX_MCLOSpyru5hPgQ0eP-75" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 19px;&quot;&gt;主要数据处理流程&lt;/font&gt;&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-470" width="940" height="1130" as="geometry">
+            <mxRectangle x="10" y="-470" width="190" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wX_MCLOSpyru5hPgQ0eP-62" value="初步注释流程" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wX_MCLOSpyru5hPgQ0eP-75">
+          <mxGeometry x="351.25" y="480" width="583.75" height="650" as="geometry">
+            <mxRectangle x="351.25" y="480" width="110" height="30" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="wX_MCLOSpyru5hPgQ0eP-63" value="超种构建" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wX_MCLOSpyru5hPgQ0eP-62">
-          <mxGeometry x="25" y="40" width="200" height="130" as="geometry" />
+          <mxGeometry x="9.75" y="30" width="530" height="160" as="geometry">
+            <mxRectangle x="53.75" y="40" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wX_MCLOSpyru5hPgQ0eP-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wX_MCLOSpyru5hPgQ0eP-63" source="wX_MCLOSpyru5hPgQ0eP-43" target="wX_MCLOSpyru5hPgQ0eP-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wX_MCLOSpyru5hPgQ0eP-43" value="将16s序列按属水平进行分类" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wX_MCLOSpyru5hPgQ0eP-63">
+          <mxGeometry x="9" y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wX_MCLOSpyru5hPgQ0eP-82" value="属X16S序列" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wX_MCLOSpyru5hPgQ0eP-63">
+          <mxGeometry x="29" y="80" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="wX_MCLOSpyru5hPgQ0eP-85" value="CD-HIT&lt;br&gt;多序列比对聚类" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wX_MCLOSpyru5hPgQ0eP-63">
+          <mxGeometry x="189" y="75" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wX_MCLOSpyru5hPgQ0eP-69" value="mock数据处理" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wX_MCLOSpyru5hPgQ0eP-62">
           <mxGeometry x="20" y="210" width="210" height="180" as="geometry" />
@@ -31,27 +52,21 @@
         <mxCell id="wX_MCLOSpyru5hPgQ0eP-70" value="物种注释" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="wX_MCLOSpyru5hPgQ0eP-62">
           <mxGeometry x="25" y="400" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="wX_MCLOSpyru5hPgQ0eP-43" value="将16s序列按属水平" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="wX_MCLOSpyru5hPgQ0eP-62">
-          <mxGeometry x="250" y="80" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="wX_MCLOSpyru5hPgQ0eP-75" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 19px;&quot;&gt;主要数据处理流程&lt;/font&gt;&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="10" y="-470" width="790" height="680" as="geometry">
-            <mxRectangle x="-10" y="-350" width="190" height="40" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="wX_MCLOSpyru5hPgQ0eP-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wX_MCLOSpyru5hPgQ0eP-75" source="wX_MCLOSpyru5hPgQ0eP-44" target="wX_MCLOSpyru5hPgQ0eP-17">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="241" y="310" />
-              <mxPoint x="130" y="310" />
+              <mxPoint x="241" y="250" />
+              <mxPoint x="241" y="290" />
+              <mxPoint x="130" y="290" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="wX_MCLOSpyru5hPgQ0eP-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="wX_MCLOSpyru5hPgQ0eP-75" source="wX_MCLOSpyru5hPgQ0eP-44" target="wX_MCLOSpyru5hPgQ0eP-24">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="241" y="310" />
-              <mxPoint x="450" y="310" />
+              <mxPoint x="241" y="250" />
+              <mxPoint x="241" y="290" />
+              <mxPoint x="450" y="290" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -94,6 +109,9 @@
         </mxCell>
         <mxCell id="wX_MCLOSpyru5hPgQ0eP-24" value="可能的RNA序列" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wX_MCLOSpyru5hPgQ0eP-75">
           <mxGeometry x="390" y="375" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="wX_MCLOSpyru5hPgQ0eP-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wX_MCLOSpyru5hPgQ0eP-75" source="wX_MCLOSpyru5hPgQ0eP-16" target="wX_MCLOSpyru5hPgQ0eP-43">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wX_MCLOSpyru5hPgQ0eP-16" value="16sRNA序列" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wX_MCLOSpyru5hPgQ0eP-75">
           <mxGeometry x="390" y="425" width="120" height="20" as="geometry" />
